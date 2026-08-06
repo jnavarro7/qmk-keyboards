@@ -1,0 +1,13 @@
+{
+    "keyboard_name": "My RP2040 Pad",
+    "url": "https://github.com",
+    "maintainer": "jn",
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "manufacturer": "jn",
+    "usb": {
+        "vid": "0xFEED",
+        "pid": "0x0001",
+        "device_version": "0.0.1"
+    }
+}
