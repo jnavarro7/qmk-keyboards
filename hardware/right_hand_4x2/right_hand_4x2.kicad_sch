@@ -6,7 +6,7 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 22.86 27.94)
+		(at 22.86 30.48)
 		(size 26.67 11.43)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22,7 +22,7 @@
 		)
 		(uuid "a19d372e-44d7-4462-971a-f2b2bff71688")
 		(property "Sheetname" "switches"
-			(at 22.86 27.2284 0)
+			(at 22.86 29.7684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33,7 +33,7 @@
 			)
 		)
 		(property "Sheetfile" "switches.kicad_sch"
-			(at 22.86 39.9546 0)
+			(at 22.86 42.4946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

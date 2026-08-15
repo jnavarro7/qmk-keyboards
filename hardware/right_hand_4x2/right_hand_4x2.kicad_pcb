@@ -9520,7 +9520,7 @@
 		(uuid "5b6b3115-1b98-46f2-b596-c570b7b9eeef")
 	)
 	(gr_text " _   _\n *   *\n   |\n\\_____/"
-		(at 192.5 88 0)
+		(at 192 90.3 0)
 		(layer "F.SilkS")
 		(uuid "8d526890-b34b-4cfa-b632-0b54f3a59c7c")
 		(effects
