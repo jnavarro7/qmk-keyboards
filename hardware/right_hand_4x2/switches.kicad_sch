@@ -5,7 +5,7 @@
 	(uuid "34667e41-c795-49fd-8b50-0499a6827a08")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Diode:1N4148WS"
+		(symbol "Diode:1N4148W"
 			(pin_numbers
 				(hide yes)
 			)
@@ -27,7 +27,7 @@
 					)
 				)
 			)
-			(property "Value" "1N4148WS"
+			(property "Value" "1N4148W"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -37,7 +37,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_SMD:D_SOD-323"
+			(property "Footprint" "Diode_SMD:D_SOD-123"
 				(at 0 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -48,7 +48,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
+			(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -59,7 +59,7 @@
 					)
 				)
 			)
-			(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
+			(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -103,7 +103,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "D*SOD?323*"
+			(property "ki_fp_filters" "D*SOD?123*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -114,7 +114,7 @@
 					)
 				)
 			)
-			(symbol "1N4148WS_0_1"
+			(symbol "1N4148W_0_1"
 				(polyline
 					(pts
 						(xy -1.27 1.27) (xy -1.27 -1.27)
@@ -152,7 +152,7 @@
 					)
 				)
 			)
-			(symbol "1N4148WS_1_1"
+			(symbol "1N4148W_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -1038,6 +1038,110 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 152.4 77.47 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05cc984b-c16e-4f1e-ab80-8c91a135b7b9")
+		(property "Reference" "D2"
+			(at 154.94 76.1999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 154.94 78.7399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 156.845 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 152.4 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 152.4 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 152.4 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 152.4 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3e0bd199-aac7-4b62-a33b-40dc6d3b9fab")
+		)
+		(pin "2"
+			(uuid "1f01fa44-a4cb-4cdc-9b2f-83fc37820740")
+		)
+		(instances
+			(project "right_hand_4x2"
+				(path "/a79dc497-1713-48b5-80ea-c9a015def7b8/a19d372e-44d7-4462-971a-f2b2bff71688"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_SPST")
 		(at 114.3 68.58 0)
 		(unit 1)
@@ -1118,8 +1222,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148WS")
-		(at 127 77.47 90)
+		(lib_id "Diode:1N4148W")
+		(at 203.2 77.47 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1127,9 +1231,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "43a38d7e-0fc1-48b9-8205-e8370d51a4f3")
-		(property "Reference" "D1"
-			(at 123.952 73.914 90)
+		(fields_autoplaced yes)
+		(uuid "2bdb308e-d2f1-47c5-b804-c3e88e006b6e")
+		(property "Reference" "D4"
+			(at 205.74 76.1999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1139,8 +1244,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148WS"
-			(at 124.206 74.676 0)
+		(property "Value" "1N4148W"
+			(at 205.74 78.7399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1150,8 +1255,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 131.445 77.47 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 207.645 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1161,8 +1266,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
-			(at 127 77.47 0)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 203.2 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1172,8 +1277,8 @@
 				)
 			)
 		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
-			(at 127 77.47 0)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 203.2 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1184,7 +1289,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 127 77.47 0)
+			(at 203.2 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1195,7 +1300,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 127 77.47 0)
+			(at 203.2 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1206,15 +1311,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "860baef8-6326-48dd-8fa4-9cea04b93ad4")
+			(uuid "2002420a-fc5f-4611-9183-23d6040095c6")
 		)
 		(pin "2"
-			(uuid "aa05563a-c2f9-4c40-824d-2bb644416ec4")
+			(uuid "05ec2e7e-5809-422b-ab02-83f299b0b1dc")
 		)
 		(instances
 			(project "right_hand_4x2"
 				(path "/a79dc497-1713-48b5-80ea-c9a015def7b8/a19d372e-44d7-4462-971a-f2b2bff71688"
-					(reference "D1")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -1461,8 +1566,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148WS")
-		(at 203.2 77.47 90)
+		(lib_id "Diode:1N4148W")
+		(at 127 102.87 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1471,9 +1576,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "812243f9-5af7-4500-b48f-08d234577171")
-		(property "Reference" "D4"
-			(at 205.74 76.1999 90)
+		(uuid "71393d0f-9400-4a06-8b90-f59e5a6372e7")
+		(property "Reference" "D5"
+			(at 129.54 101.5999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1483,8 +1588,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148WS"
-			(at 205.74 78.7399 90)
+		(property "Value" "1N4148W"
+			(at 129.54 104.1399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1494,8 +1599,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 207.645 77.47 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 131.445 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1505,8 +1610,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
-			(at 203.2 77.47 0)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 127 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1516,8 +1621,8 @@
 				)
 			)
 		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
-			(at 203.2 77.47 0)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 127 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1528,7 +1633,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 203.2 77.47 0)
+			(at 127 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1539,7 +1644,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 203.2 77.47 0)
+			(at 127 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1549,24 +1654,24 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "996f6430-283e-408e-9525-ed27c3ed6274")
-		)
 		(pin "2"
-			(uuid "087c67a8-27a5-4280-b215-3c7daa87ae91")
+			(uuid "efe14e2b-3c76-4e45-a7d0-985b35a55a51")
+		)
+		(pin "1"
+			(uuid "0ba672cc-860c-4696-8c2f-ae5b3e7a1253")
 		)
 		(instances
 			(project "right_hand_4x2"
 				(path "/a79dc497-1713-48b5-80ea-c9a015def7b8/a19d372e-44d7-4462-971a-f2b2bff71688"
-					(reference "D4")
+					(reference "D5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148WS")
-		(at 152.4 102.87 90)
+		(lib_id "Diode:1N4148W")
+		(at 127 77.47 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1574,9 +1679,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "84c870e5-e416-41c0-abc0-02bda73aa92e")
-		(property "Reference" "D6"
-			(at 149.352 100.33 90)
+		(fields_autoplaced yes)
+		(uuid "7d2b7f3a-8838-400d-82aa-25334dec31ae")
+		(property "Reference" "D1"
+			(at 129.54 76.1999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1586,8 +1692,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148WS"
-			(at 149.352 101.6 0)
+		(property "Value" "1N4148W"
+			(at 129.54 78.7399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1597,8 +1703,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 156.845 102.87 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 131.445 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1608,8 +1714,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
-			(at 152.4 102.87 0)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 127 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1619,8 +1725,8 @@
 				)
 			)
 		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
-			(at 152.4 102.87 0)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 127 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1631,7 +1737,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 152.4 102.87 0)
+			(at 127 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1642,7 +1748,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 152.4 102.87 0)
+			(at 127 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1652,16 +1758,16 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "0a4a0021-687b-4249-bbfc-b5422d04aaf3")
-		)
 		(pin "2"
-			(uuid "577529bd-f781-4350-b0a1-4cd21195b446")
+			(uuid "02068d54-1180-410c-a772-a8d77f9759ad")
+		)
+		(pin "1"
+			(uuid "c422f305-0538-477c-af3b-b8d128789704")
 		)
 		(instances
 			(project "right_hand_4x2"
 				(path "/a79dc497-1713-48b5-80ea-c9a015def7b8/a19d372e-44d7-4462-971a-f2b2bff71688"
-					(reference "D6")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -1828,8 +1934,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148WS")
-		(at 203.2 102.87 90)
+		(lib_id "Diode:1N4148W")
+		(at 177.8 77.47 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1837,9 +1943,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "a095d5e6-c475-480e-863b-551501fb151b")
-		(property "Reference" "D8"
-			(at 199.898 100.33 90)
+		(fields_autoplaced yes)
+		(uuid "a308bb07-05c7-4e90-a367-381a7116e4c9")
+		(property "Reference" "D3"
+			(at 180.34 76.1999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1849,8 +1956,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148WS"
-			(at 200.406 101.6 0)
+		(property "Value" "1N4148W"
+			(at 180.34 78.7399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1860,8 +1967,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 207.645 102.87 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 182.245 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1871,8 +1978,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
-			(at 203.2 102.87 0)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 177.8 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1882,8 +1989,8 @@
 				)
 			)
 		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
-			(at 203.2 102.87 0)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 177.8 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1894,7 +2001,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 203.2 102.87 0)
+			(at 177.8 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1905,7 +2012,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 203.2 102.87 0)
+			(at 177.8 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1915,126 +2022,23 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "fb88ef0a-e30e-4a7d-80be-8e358d95d456")
-		)
 		(pin "2"
-			(uuid "4cc0ca40-75ba-4855-adfc-cd43d1e498c2")
+			(uuid "5f44ce71-31c3-44b1-9e2b-3d1d1a6abbdc")
+		)
+		(pin "1"
+			(uuid "c8815868-d4d3-44d5-b57e-11a2cf5b6426")
 		)
 		(instances
 			(project "right_hand_4x2"
 				(path "/a79dc497-1713-48b5-80ea-c9a015def7b8/a19d372e-44d7-4462-971a-f2b2bff71688"
-					(reference "D8")
+					(reference "D3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148WS")
-		(at 152.4 77.47 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a29eca61-9288-4d03-b8b6-177c3f45826b")
-		(property "Reference" "D2"
-			(at 148.844 73.406 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N4148WS"
-			(at 149.352 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 156.845 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
-			(at 152.4 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
-			(at 152.4 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 152.4 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 152.4 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "47741c01-8bfc-40ba-b4ac-b0efdbd0f25f")
-		)
-		(pin "2"
-			(uuid "4a03aee2-981f-4cdb-bd41-df89d4b11f5c")
-		)
-		(instances
-			(project "right_hand_4x2"
-				(path "/a79dc497-1713-48b5-80ea-c9a015def7b8/a19d372e-44d7-4462-971a-f2b2bff71688"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N4148WS")
+		(lib_id "Diode:1N4148W")
 		(at 177.8 102.87 90)
 		(unit 1)
 		(body_style 1)
@@ -2043,9 +2047,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "a7721918-0e04-41ec-910c-37bf641d595e")
+		(fields_autoplaced yes)
+		(uuid "b6f1e6ed-3d0a-4015-aa64-631acc13b0b8")
 		(property "Reference" "D7"
-			(at 174.498 100.33 90)
+			(at 180.34 101.5999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2055,8 +2060,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148WS"
-			(at 174.752 101.346 0)
+		(property "Value" "1N4148W"
+			(at 180.34 104.1399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2066,7 +2071,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 182.245 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -2077,7 +2082,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 			(at 177.8 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -2088,7 +2093,7 @@
 				)
 			)
 		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 			(at 177.8 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -2121,119 +2126,16 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "6890b59f-411a-45f5-9bc5-093715db343b")
-		)
 		(pin "2"
-			(uuid "1f83f04f-f969-45af-a853-035b4c603f9a")
+			(uuid "6559e91a-8c2f-49ea-9cd5-84f1f6520dc4")
+		)
+		(pin "1"
+			(uuid "c8a75758-bcad-46b8-8947-ff1fcca815ad")
 		)
 		(instances
 			(project "right_hand_4x2"
 				(path "/a79dc497-1713-48b5-80ea-c9a015def7b8/a19d372e-44d7-4462-971a-f2b2bff71688"
 					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N4148WS")
-		(at 127 102.87 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bc6b5743-a3fd-48fb-ac6b-53bb148b6ecd")
-		(property "Reference" "D5"
-			(at 123.698 99.822 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N4148WS"
-			(at 123.698 101.346 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 131.445 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
-			(at 127 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
-			(at 127 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 127 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 127 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f051fed8-2e01-4592-b076-11140b19f4a1")
-		)
-		(pin "2"
-			(uuid "67e1f335-f00b-4d03-b561-af46938a81a3")
-		)
-		(instances
-			(project "right_hand_4x2"
-				(path "/a79dc497-1713-48b5-80ea-c9a015def7b8/a19d372e-44d7-4462-971a-f2b2bff71688"
-					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -2320,8 +2222,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148WS")
-		(at 177.8 77.47 90)
+		(lib_id "Diode:1N4148W")
+		(at 203.2 102.87 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2329,9 +2231,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "e7b6df81-b6ce-446a-8e44-7c144d3582e3")
-		(property "Reference" "D3"
-			(at 175.006 73.152 90)
+		(fields_autoplaced yes)
+		(uuid "e7a3d38e-caa4-4058-9b30-37a3d8590e4e")
+		(property "Reference" "D8"
+			(at 205.74 101.5999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2341,8 +2244,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N4148WS"
-			(at 175.006 74.676 0)
+		(property "Value" "1N4148W"
+			(at 205.74 104.1399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2352,8 +2255,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 182.245 77.47 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 207.645 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2363,8 +2266,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
-			(at 177.8 77.47 0)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 203.2 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2374,8 +2277,8 @@
 				)
 			)
 		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
-			(at 177.8 77.47 0)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 203.2 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2386,7 +2289,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 177.8 77.47 0)
+			(at 203.2 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2397,7 +2300,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 177.8 77.47 0)
+			(at 203.2 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2408,15 +2311,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "f6befa47-198a-4534-a067-11a0751e938f")
+			(uuid "738814cb-18e6-4cf7-9c20-8ab18d57afa7")
 		)
 		(pin "2"
-			(uuid "bdef5997-ca77-40f4-95fa-6d504bdac151")
+			(uuid "fbf40484-5d08-4ed5-b087-26c15536d470")
 		)
 		(instances
 			(project "right_hand_4x2"
 				(path "/a79dc497-1713-48b5-80ea-c9a015def7b8/a19d372e-44d7-4462-971a-f2b2bff71688"
-					(reference "D3")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -2497,6 +2400,110 @@
 			(project "right_hand_4x2"
 				(path "/a79dc497-1713-48b5-80ea-c9a015def7b8/a19d372e-44d7-4462-971a-f2b2bff71688"
 					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 152.4 102.87 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc971399-e578-4e8b-8bdb-cad1ef84db8c")
+		(property "Reference" "D6"
+			(at 154.94 101.5999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 154.94 104.1399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 156.845 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 152.4 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 152.4 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 152.4 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 152.4 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0221d54f-17c0-4a84-aa1e-f16ae152b231")
+		)
+		(pin "2"
+			(uuid "436525e9-5f28-41b0-992c-c1b6b495daea")
+		)
+		(instances
+			(project "right_hand_4x2"
+				(path "/a79dc497-1713-48b5-80ea-c9a015def7b8/a19d372e-44d7-4462-971a-f2b2bff71688"
+					(reference "D6")
 					(unit 1)
 				)
 			)

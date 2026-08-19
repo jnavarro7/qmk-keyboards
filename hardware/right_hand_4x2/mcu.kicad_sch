@@ -1064,6 +1064,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Look for the Adafruit QT py rp2040"
+		(exclude_from_sim no)
+		(at 143.764 141.732 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+		)
+		(uuid "6993860d-4eea-42ca-b10e-93ff4d4a1e7a")
+	)
 	(wire
 		(pts
 			(xy 161.29 88.9) (xy 170.18 88.9)
