@@ -1,0 +1,23 @@
+MCU = RP2040
+BOOTLOADER = rp2040
+
+# Matriz
+MATRIX_ENABLE = yes
+
+# USB
+USB_ENABLE = yes
+
+# RGB Light
+RGBLIGHT_ENABLE = yes
+WS2812_DRIVER = vendor
+ACTION_LAYER_ENABLE = yes
+ACTION_FUNCTION_ENABLE = yes
+
+# Opcional pero recomendado
+LTO_ENABLE = yes
+
+COMBO_ENABLE = no
+
+MOUSEKEY_WHEEL_ENABLE = yes
+MOUSEKEY_ENABLE = yes
+

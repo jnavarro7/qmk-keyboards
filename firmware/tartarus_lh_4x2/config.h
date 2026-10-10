@@ -1,0 +1,30 @@
+#pragma once
+
+/* 4x2 keypad matrix */
+#define MATRIX_ROWS 2
+#define MATRIX_COLS 4
+
+/* RP2040-Zero wiring */
+#define MATRIX_ROW_PINS { GP5, GP6 }
+#define MATRIX_COL_PINS { GP0, GP1, GP2, GP3 }
+
+/* Diode direction */
+#define DIODE_DIRECTION COL2ROW
+
+/* RGB (WS2812B) */
+#define WS2812_DI_PIN GP11
+#define RGBLIGHT_LED_COUNT 8
+#define RGBLIGHT_LIMIT_VAL 80
+#define RGBLIGHT_SLEEP
+
+#define RGBLIGHT_USE_KEYCODES
+#define RGBLIGHT_DEFAULT_VAL 40
+
+/* Debounce */
+#define DEBOUNCE 10
+
+#define MATRIX_IO_DELAY 30
+
+#define MOUSEKEY_WHEEL_DELAY    0
+#define MOUSEKEY_WHEEL_INTERVAL 120
+#define MOUSEKEY_WHEEL_DELTA    1
