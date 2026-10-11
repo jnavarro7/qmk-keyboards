@@ -21,16 +21,16 @@ void trigger_key_flash(uint8_t led_idx) {
     }
 }
 
-// CORREGIDO: Se restauraron las tres dimensiones para el compilador de QMK
+// 4x2 keymap 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
-        KC_7, KC_8, KC_9, KC_0,
-        KC_4, KC_5, KC_6, KC_ENT
+        KC_5, KC_6, KC_7, KC_8,
+        KC_1, KC_2, KC_3, KC_4
     )
 };
 
 void keyboard_post_init_user(void) {
-    // Permite que la tira inicie en su estado nativo de QMK (Rojo)
+    // RGB lighting configuration
     rgblight_enable_noeeprom();
     rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
 }
@@ -61,5 +61,5 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
         trigger_key_flash(led_idx);
     }
-    return true; // Envía la pulsación a la computadora
+    return true; // Process all keycodes normally
 }
