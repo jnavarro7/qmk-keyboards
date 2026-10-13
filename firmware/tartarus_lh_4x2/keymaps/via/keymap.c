@@ -21,7 +21,7 @@ void trigger_key_flash(uint8_t led_idx) {
     }
 }
 
-// 4x2 keymap 
+// 4x2 keymap assignments
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
         KC_5, KC_6, KC_7, KC_8,
@@ -48,8 +48,13 @@ void matrix_scan_user(void) {
             continue;
         }
 
-        uint8_t brightness = 255 - ((elapsed * 255) / KEY_FLASH_MS);
+        // Change 255 to a lower cap (e.g., 128 for ~50% brightness)
+        uint8_t max_brightness = 80; 
+
+        uint8_t brightness = max_brightness - ((elapsed * max_brightness) / KEY_FLASH_MS);
         rgblight_setrgb_at(0, brightness, 0, i);
+        // uint8_t brightness = 255 - ((elapsed * 255) / KEY_FLASH_MS);
+        // rgblight_setrgb_at(0, brightness, 0, i);
     }
 }
 
